@@ -91,9 +91,6 @@ public class Output2 {
 					if(Sl > 0)Sl++;
 					if(Nl > 0)Nl++;
 					startSN = false;
-					// if no traffic from opposite direction
-					if(Sr > 0)Sr--;
-					if(Nr > 0)Nr--;
 				}
 				Wl++;
 				El++;
@@ -102,10 +99,6 @@ public class Output2 {
 					if(Wl > 0)Wl++;
 					if(El > 0)El++;
 					startWE = false;
-					// if no traffic from opposite direction
-
-					if(Wr > 0)Wr--;
-					if(Er > 0)Er--;
 				}
 				Sl++;
 				Nl++;
@@ -129,8 +122,6 @@ public class Output2 {
 				if(startSN) {// if no traffic from opposite direction
 					startSN = false;
 				}else {
-					Sr++;
-					Nr++;
 					if(Sl > 0)Sl--;
 					if(Nl > 0)Nl--;
 				}
@@ -141,9 +132,6 @@ public class Output2 {
 				if(startWE) {// if no traffic from opposite direction
 					startWE = false;
 				}else {
-					Wr++;
-					Er++;
-
 					if(Wl > 0)Wl--;
 					if(El > 0)El--;
 				}
